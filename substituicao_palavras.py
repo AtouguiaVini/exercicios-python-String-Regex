@@ -16,12 +16,12 @@ import re
 
 print('Editor de texto\n')
 
-texto = input('Insira o texto: ')
-palavra_substituida = input('Insira a palara que será substituida: ' )
-nova_palavra = input('Insira a nova palavra: ' )
+texto = input('Insira o texto para revisão: ')
+palavra_substituida = input('Insira a palara que gostaria de substituir: ' )
+nova_palavra = input('Insira a nova palavra: ')
 print()
 
-substituicao_texto = re.sub(rf'\b{palavra_substituida}\b', nova_palavra, texto)
+substituicao_texto = re.sub(fr'\b{palavra_substituida}\b', nova_palavra, texto)
 
 print(f'Resultado: "{substituicao_texto}"')
 
