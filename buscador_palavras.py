@@ -89,7 +89,8 @@ resultado = [livro for livro in biblioteca if re.search(verificacao_regex, livro
 
 if resultado:
     print(f'Lista de livros disponíveis com iniciais com o alfanumérico {alfanumerico}:')
-    print(resultado)
+    resultado_ordem = sorted(resultado)
+    print(resultado_ordem)
 else:
     print(f'Não foi encontrado livros com o alfanumérico: {alfanumerico}')
 
